@@ -4,4 +4,6 @@
     <string name="action_settings">Settings</string>
 
     <string name="time_label">Current Time</string>
+    <string name="millis_label">Current Millis</string>
+
 </resources>

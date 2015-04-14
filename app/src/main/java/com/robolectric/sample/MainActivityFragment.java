@@ -18,6 +18,7 @@ import java.util.Locale;
 public class MainActivityFragment extends Fragment {
 
     private TextView mCurrentTimeTextView;
+    private TextView mCurrentMillisTextView;
 
     public MainActivityFragment() {
     }
@@ -31,7 +32,8 @@ public class MainActivityFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mCurrentTimeTextView = (TextView) view.findViewById(R.id.current_time_text);
+        mCurrentTimeTextView = (TextView) view.findViewById(R.id.current_formatted_time);
+        mCurrentMillisTextView = (TextView) view.findViewById(R.id.current_millis_time);
 
         setCurrentTime();
     }
